@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
-  </body>
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+ </head>
+   <body>
+       <div class="webpage">
+           <div class="section-first">
+              <div class="navigation-bar">
+                <div class="award">AWARDS</div>
+                    <div class="nav-three">
+                        <div><a href="aboutus">ABOUT US</a></div>
+                        <div><a href="contact">CONTACT</a></div>
+                        <div><a href="ourcompetions" id="competition">OUR COMPETITIONS</a></div>
+                    </div>
+                        <div><a href="signup" class="signup">SIGNIN/SIGNUP</a></div>
+                </div>
+                <div class="container-one">
+                    <div class="paragraph-one">
+                        <div class="welcome">Welcome to the competition</div>
+                        <span class="line">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac, nec viverra pretium.</span>
+                        <span class="line">Adipiscing sit quisque mauris est sit tristique nunc mauris. Urna,malesuada elementum,</span>
+                        <span class="line">pellentesque luctus at dui feugiat. Sollicitudin leo lacus sagittispurus nec phasellus dui.</span>
+                        <span class="line">Libero scelerisque venenatis duis ornare. Ut tellus dignissim quamauctor hac morbi</span>
+                        <span class="line">eleifend enim, non. Metus, semper facilisi aliquet massa. Netus morbielit quam pulvinar</span>
+                        <span class="line">blandit facilisis faucibus. Nunc pellentesque cursus pretium eget libero</span>
+                        <div class="click"><a href="click">Click to see more</a></div>
+                      </div>
+                    <div class="image"><img src="images/treeImage.svg" alt="treepot"></div>  
+                </div>
+            </div>
+            <div class="section-second">
+                <div class="sub-division">
+                    <div class="formbox-right">
+                        <div class="application">Fill the Application</div>
+                        <div class="sub-box">
+                        <div><input type="text" id="firstname" class="division-one" name=" fname" placeholder="Full Name" required /></div>
+                        <div><input type="email" id="email" class="division-one" name="email" placeholder="Enter Email Address" required /></div>
+                        <div><input type="number" id="phone" class="division-one" name="phonenumber" placeholder="Phone Number" required /></div>
+                        <div><input type="text" id="address1" class="division-one" name="address" placeholder="Street Address" required /></div>
+                        <div><input type="text" id="address2" class="division-one" name="address" /></div>
+                        <div class="select-one">
+                        <div><select name="city" id="city" class="division-one">
+                            <option value="City">City</option>
+                            <option value="Kollam">Kollam</option>
+                            <option value="Kottayam">Kottayam</option>
+                            <option value="Alappuzha">Alappuzha</option>
+                            <option value="Pathanamthitta">Pathanamthitta</option>
+                        </select></div>
+                        <div><select name="state" id="state" class="division-one">
+                            <option value="State">State</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Tamilnadu">Tamilnadu</option>
+                            <option value="Karnadaka">Karnadaka</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh </option>
+                        </select></div>
+                        </div>
+                        <div class="select-two">
+                        <div><select name="country" #id="country" class="division-one">
+                            <option value="country">Country</option>
+                            <option value="India">India</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="Australia">Australia</option>
+                        </select></div>
+                        <div><input type="text" id="zipcode" class="division-one" name="zipcode" placeholder="Zip Code" required /></div>
+                        </div class="gender">
+                        <div class="input-radio"> <form action="/action_page.php">
+                            <input type="radio" name="male" value="male" checked>
+                            <label for="male">Male</label>
+                            <input type="radio" name="female" value="female">
+                            <label for="female">Female</label></form>
+                        </div>
+                    </div>
+                </div>
+                <div class="formbox-left">
+                        <div class="description">
+                            <div><label for="description" >Description</label></div>
+                            <textarea rows="7" cols="4" class="textbox" role="textbox" required></textarea>
+                        </div>
+                        <div class="photo-contest"><select name="Photo Contest" class="division-two">
+                            <option value="Photo Contest Category">Photo Contest Category</option>
+                            <option value="portrait">portrait</option>
+                            <option value="Landscapes">Landscapes</option>
+                            <option value="wild life">wild life</option>
+                        </select></div>
+                        <div class="payment">
+                            <div><label for="payment" >Payment Option</label></div>
+                            <div><input type="text" class="division-two" id="card-name" name="card name" placeholder="Name On Card*" required /></div>
+                            <div><input type="text" class="division-two" name="credit card" placeholder="Credit Card*" required /></div>
+                        </div> 
+                        <div class="terms" >
+                            <div class="Terms-and-Conditions"  > Terms and Conditions</div>
+                            <div><input type="checkbox" class="check" name="i agree" checked/>
+                            <label for="agree" class="agree">I Agree</label></div>
+                        </div>
+                        <div class="final">
+                            <div><input type="submit" value="submit" class="submit-button" />
+                            <input type="button" value="cancel" class="cancel-button" /></div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+   </body>
 </html>
