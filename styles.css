@@ -20,7 +20,7 @@ body {
     margin: 0rem;
     font-family: roboto;
 }.webpage{
-    max-width: 1400px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -33,8 +33,9 @@ body {
     background-color: #000000;
     padding: 2rem;
     align-items: baseline;
-    max-width: 1400px;
+    max-width: 1500px;
     flex-wrap: wrap;
+    font-family: roboto;
 }
 
 .award {
@@ -58,6 +59,7 @@ body {
 
 #competition {
     font-weight:bolder;
+    font-family: inter;
 }
 
 .signup {
@@ -200,7 +202,7 @@ body {
 }
 
 #city {
-    min-width;:50%
+    min-width:50%;
 }
 
 #country {
@@ -210,7 +212,7 @@ body {
 .description {
     font-size: 1rem;
     color: #d5d5d5;
-    margin-top: 7rem;
+    margin-top: 6rem;
     margin-left: 2rem;
     font-family: inter;
 }
@@ -222,6 +224,10 @@ body {
     border-radius: 1rem;
     margin-top: 1rem;
     color: #ffffff;
+    padding: 1rem;
+}
+.textbox{
+    overflow: hidden;
 }
 
 .division-two {
@@ -331,3 +337,4 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-top: .5rem;
     margin-left: 2rem;
 }
+

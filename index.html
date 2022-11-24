@@ -10,6 +10,7 @@
  </head>
    <body>
        <div class="webpage">
+        <form action="/action_page.php"></form>
            <div class="section-first">
               <div class="navigation-bar">
                 <div class="award">AWARDS</div>
@@ -39,6 +40,7 @@
                     <div class="formbox-right">
                         <div class="application">Fill the Application</div>
                         <div class="sub-box">
+                         <form>
                         <div><input type="text" id="firstname" class="division-one" name=" fname" placeholder="Full Name" required /></div>
                         <div><input type="email" id="email" class="division-one" name="email" placeholder="Enter Email Address" required /></div>
                         <div><input type="number" id="phone" class="division-one" name="phonenumber" placeholder="Phone Number" required /></div>
@@ -70,18 +72,18 @@
                         </select></div>
                         <div><input type="text" id="zipcode" class="division-one" name="zipcode" placeholder="Zip Code" required /></div>
                         </div class="gender">
-                        <div class="input-radio"> <form action="/action_page.php">
-                            <input type="radio" name="male" value="male" checked>
+                        <div class="input-radio">
+                            <input type="radio" name="gender" value="male" checked>
                             <label for="male">Male</label>
-                            <input type="radio" name="female" value="female">
-                            <label for="female">Female</label></form>
+                            <input type="radio" name="gender" value="female">
+                            <label for="female">Female</label>
                         </div>
                     </div>
                 </div>
                 <div class="formbox-left">
                         <div class="description">
                             <div><label for="description" >Description</label></div>
-                            <textarea rows="7" cols="4" class="textbox" role="textbox" required></textarea>
+                            <textarea rows="6" cols="4" class="textbox" role="textbox" required></textarea>
                         </div>
                         <div class="photo-contest"><select name="Photo Contest" class="division-two">
                             <option value="Photo Contest Category">Photo Contest Category</option>
@@ -95,13 +97,14 @@
                             <div><input type="text" class="division-two" name="credit card" placeholder="Credit Card*" required /></div>
                         </div> 
                         <div class="terms" >
-                            <div class="Terms-and-Conditions"  > Terms and Conditions</div>
+                            <div class="Terms-and-Conditions"> Terms and Conditions</div>
                             <div><input type="checkbox" class="check" name="i agree" checked/>
                             <label for="agree" class="agree">I Agree</label></div>
                         </div>
-                        <div class="final">
-                            <div><input type="submit" value="submit" class="submit-button" />
-                            <input type="button" value="cancel" class="cancel-button" /></div>
+                        <div class="final"> 
+                            <div><input type="submit" value="submit" class="submit-button"/>
+                            <input type="button" value="cancel" class="cancel-button"/></div>
+                        </form>   
                     </div>       
                 </div>
             </div>
